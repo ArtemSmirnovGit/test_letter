@@ -1,0 +1,498 @@
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+            line-height: 100%;
+        }
+
+        [style*="Roboto"] {
+            font-family: 'Roboto', arial, sans-serif !important;
+        }
+
+        [style*="Montserrat"] {
+            font-family: 'Montserrat', arial, sans-serif !important;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            border: none;
+            -ms-interpolation-mode: bicubic;
+            max-width: 100% !important;
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+
+        .desc_header_td {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+
+            color: #FFFFFF;
+        }
+
+        .desc_td td {
+            display: block;
+            padding-left: 20px;
+            padding-right: 40px;
+
+        }
+
+        .desc_text {
+            padding-bottom: 5px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 149.9%;
+
+
+            color: #FFFFFF;
+        }
+
+        .bio {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 16px;
+
+            color: #FFFFFF;
+        }
+
+        .msg_td td {
+            display: block;
+        }
+
+
+        .msg_text {
+            padding-left: 23px;
+            padding-right: 10px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 149.9%;
+            color: #000000;
+        }
+
+        .msg_button {
+            display: block;
+            margin-left: 23px;
+            margin-bottom: 15px;
+
+        }
+
+        .msg_button a {
+            display: block;
+            padding-top: 14px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        .footer_wfy {
+            padding-right: 80px;
+            padding-left: 30px;
+        }
+
+        .footer.bot .footer_wfy {
+            padding-right: 190px;
+        }
+
+        .footer.top p{
+
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;
+
+            color: #FFFFFF;
+
+            mix-blend-mode: normal;
+        }
+
+
+        .footer.bot p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 12px;
+
+            color: rgba(255, 255, 255, 0.7);
+
+            opacity: 0.7;
+        }
+
+
+        
+        @media (max-width: 649px) {
+            .table-680 {
+                width: 600px !important;
+            }
+
+            .table-650 {
+                width: 580px !important;
+            }
+
+
+
+
+            .desc_text p br{
+                display: none !important;
+
+            }
+
+
+
+
+            .doc_photo {
+                min-width: 327px !important;
+            }
+
+
+            .bio_text {
+                font-size: 12px !important;
+                padding-left: 10px !important;
+            }
+
+            .bio p br {
+
+                display: none !important;
+            }
+        }
+
+
+
+        @media (max-width: 599px) {
+            .table-680 {
+                width: 550px !important;
+            }
+
+            .table-650 {
+                width: 520px !important;
+            }
+
+            .footer_wfy {
+                padding-right: 35px !important;
+                padding-left: 20px !important;
+            }
+
+
+        }
+
+        @media (max-width: 549px) {
+            .table-680 {
+                width: 400px !important;
+            }
+
+            .table-650 {
+                width: 380px !important;
+            }
+
+
+            .bio td {
+                display: block !important;
+            }
+
+            .doc_photo {
+                padding-top: 25px !important;
+                padding-left: 25px !important;
+            }
+
+
+
+            .bio_text {
+                padding-right: 5px !important;
+                text-align: center !important;
+            }
+
+
+            .footer_wfy {
+                padding-right: 0px !important;
+                padding-left: 10px !important;
+            }
+        }
+
+
+        @media (max-width: 399px) {
+            .table-680 {
+                width: 340px !important;
+            }
+
+            .table-650 {
+                width: 320px !important;
+            }
+
+            .doc_photo {
+                padding-top: 25px !important;
+                padding-left: 0px !important;
+            }
+
+            .bio_text {
+                padding-right: 8px !important;
+                text-align: center !important;
+            }
+
+
+            .footer.bot .footer_wfy {
+                padding-right: 70px !important;
+            }
+        }
+
+        @media (max-width: 339px) {
+            .table-680 {
+                width: 300px !important;
+            }
+
+            .table-650 {
+                width: 290px !important;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Test letter
+</div>
+<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+    <tr>
+        <td>
+            <table class="main table-680" cellpadding="0" cellspacing="0" width="680" bgcolor="#ffffff" align="center">
+                <tr>
+                    <td height="25" width="680"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="table-650" cellpadding="0" cellspacing="0" width="650" align="center">
+                            <tr>
+                                <td bgcolor="#ffffff" class="header_td">
+                                    <table class="table-650" cellpadding="0" cellspacing="0" width="650" align="center">
+                                        <tr>
+                                            <td align="left" class="logo">
+                                                <img src="https://i.ibb.co/5x06jk3/logo.png" alt="logo"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="25" width="650"></td>
+                            </tr>
+                            <tr>
+                                <td class="bg_td">
+                                  <img src="https://i.ibb.co/wMNMWx9/bg-1.png" alt="background"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#5D7DE2" class="desc_td">
+                                    <table class="table-650" cellpadding="0" cellspacing="0" width="650" align="center">
+                                        <tr>
+                                            <td class="desc_header_td">
+                                                <p style="font-family: Arial, Helvetica, sans-serif, 'Roboto';">Дорогие
+                                                    коллеги!</p>
+                                            </td>
+                                            <td class="desc_text"
+                                                style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';"><p>
+                                                Сегодня мы представляем Вам новый уникальный проект на сайте NNI – <br/>
+                                                «КАК СТАТЬ ПРОФЕССОРОМ. ИЗВЕСТНЫЕ ПЕДИАТРЫ В ЖИЗНИ И НА РАБОТЕ»</p></td>
+
+                                            <td class="desc_text"
+                                                style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';"><p>Вы
+                                                сможете посмотреть несколько интервью с интереснейшими людьми,<br/>
+                                                профессионалами своего дела, известными педиатрами. Они раскроются перед<br/>
+                                                Вами с совершенно новой, ранее неизвестной стороны.</p></td>
+
+                                            <td class="desc_text"
+                                                style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';"><p>
+                                                Медицинский директор компании Nestle Украинцев Сергей Евгеньевич задает
+                                                много<br/> интересных вопросов нашим профессорам и, скорее всего, Вы
+                                                будете удивлены их<br/> ответам.</p></td>
+
+                                            <td class="desc_text"
+                                                style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';"><p>
+                                                Вопросы совершенно разные, нам с вами их тоже задают наши знакомые и
+                                                друзья:<br/> «Почему вы решили стать врачом?», «Переживаете ли вы за
+                                                своих пациентов?»,<br/> «Волнуетесь ли вы перед выходом на трибуну и
+                                                выступлением?» и многие другие.<br/>
+                                                Наши профессора поделятся с Вами своими мыслями, взглядами, чувствами, и
+                                                даже<br/> шутками.
+                                            </p></td>
+
+                                            <td class="desc_text"
+                                                style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';"><p>
+                                                Сегодня Вас ждут две встречи:</p></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="10" width="650"></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#5D7DE2" class="docs_td">
+                                    <table class="bio table-650" cellpadding="0" cellspacing="0" width="650" align="center">
+                                        <tr>
+                                            <td class="doc_photo">
+                                                <img  src="https://i.ibb.co/qY6K4Gh/doc-1.png" alt="doc_1">
+                                            </td>
+                                            <td class="bio_text"
+                                                style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">
+                                                <p>Доктор медицинских наук, профессор<br/> кафедры детских болезней<br/>
+                                                    им. профессора И.М.Воронцова ФП и ДПО<br/> Санкт-Петербургского
+                                                    Педиатрического<br/> Медицинского Университета – Корниенко<br/>
+                                                    Елена Алексадровна.</p>
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="10" width="650"></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#5D7DE2" class="docs_td">
+                                    <table class="bio table-650" cellpadding="0" cellspacing="0" width="650" align="center">
+                                        <tr>
+                                            <td class="doc_photo">
+                                                <img  src="https://i.ibb.co/q1SWxqr/doc-2.png" alt="doc_2">
+                                            </td>
+                                            <td class="bio_text"
+                                                style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">
+                                                <p>Доктор медицинских наук, профессор,<br/>заведующий кафедрой педиатрии
+                                                    РУДН –<br/> Овсянников Дмитрий Юрьевич.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="15" width="650"></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#F6F6F6" class="msg_td">
+                                    <table class="table-650" cellpadding="0" cellspacing="0" width="650" align="center">
+                                        <tr>
+                                            <td bgcolor="#33CC66" height="6"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="msg_text"
+                                                style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">
+                                                <p>Мы уверены, что новый проект Вам понравился и мы уже готовим новые
+                                                    интервью.</p>
+                                            </td>
+                                            <td class="msg_text"
+                                                style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">
+                                                <p>В серии этих интервью вы сможете встретиться с легендой
+                                                    педиатрической науки –<br/> профессором Владимиром Кирилловичем
+                                                    Таточенко, и услышать его историю учёбы в мединституте, рассуждения
+                                                    о педиатрии, и не только. Не пропустите наши рассылки!</p>
+                                            </td>
+                                            <td class="msg_text"
+                                                style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">
+                                                <p>До встречи!<br/>С уважением, Команда NNI</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="#33CC66" width="225" height="45" class="msg_button"
+                                                align="center">
+                                                <a style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';"
+                                                   href="#">Перейти на сайт</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="15" width="650"></td>
+                            </tr>
+
+                        </table>
+                <tr>
+                    <td bgcolor="#5D7DE2" class="footer top">
+                        <table class="table-680" cellpadding="0" cellspacing="0" width="680" align="center" >
+                            <tr>
+                                <td class="footer_wfy">
+                                    <p style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">Ждем вас на нашем сайте!
+                                    </p>
+                                </td>
+                                <td>
+                                    <a href="#"><img src="https://i.ibb.co/P4cDvQV/fb-logo.png" alt="fb_logo"></a>
+                                </td>
+                                <td >
+                                    <a href="#"><img src="https://i.ibb.co/FqfxqGn/inst-logo.png" alt="inst_logo"></a>
+                                </td>
+                                <td >
+                                    <a href="#"><img src="https://i.ibb.co/F0y6pz5/tw-logo.png" alt="vk_logo"></a>
+                                </td>
+                                <td >
+                                    <a href="#"><img src="https://i.ibb.co/F883Xzv/vk-logo.png" alt="twitter_logo"></a>
+                                </td>
+                           </tr>
+
+
+                        </table>
+                    </td>
+                <tr>
+                    <td class="line" bgcolor="#7892e3" height="1" width="650"></td>
+                </tr>
+                </tr>
+                    <tr>
+                        <td bgcolor="#5D7DE2" class="footer bot">
+                            <table class="table-680" cellpadding="0" cellspacing="0" width="680" align="center">
+                                <tr>
+                                    <td class="footer_wfy">
+                                        <p style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">Только для работников здравоохранения</p>
+                                        <p style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';text-decoration-line: underline;">Отписаться от рассылки</p>
+                                    </td>
+                                    <td >
+                                        <p style="font-family: Arial, Helvetica, sans-serif, 'Montserrat';">2020 Nestlé Nutrition Institute</p>
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+</table>
+</body>
+
+</html>
